@@ -6,6 +6,14 @@
 * Clone(): 深拷贝，浅拷贝，使用这个效率高，深拷贝
 * finalized: GC时会调动该方法，自救。
 
+> 浅拷贝就是重新创建一个对象，这个新对象有被拷贝的属性值，如果被拷贝的对象是基本类型，拷贝就是基本类型的值，如果是引用类型，则是内存地址，一荣俱荣的那种关系。
+>
+> ![image-20220115224736264](/Users/linyue/Library/Application Support/typora-user-images/image-20220115224736264.png)
+>
+> 深拷贝会拷贝所有的属性，并拷贝属性指向的动态分配的内存，当对象和它所引用的对象一起拷贝时即发生深拷贝。深拷贝相比于浅拷贝速度较慢并且花销较大。
+>
+> ![image-20220115224747810](/Users/linyue/Library/Application Support/typora-user-images/image-20220115224747810.png)
+
 
 
 ## JDK1.8特性
